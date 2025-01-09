@@ -1,2 +1,2 @@
 # x
-This project only for testing and education egitim lütfen banlamayin
+This project is for testing and education egitim only lütfen banlamayin
